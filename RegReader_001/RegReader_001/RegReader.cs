@@ -18,6 +18,8 @@ namespace RegReader_001
             //RegistryKey myKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\MMDevices\Audio\Render", false);     // works in any CPU build
             //RegistryKey myKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\MMDevices\Audio\Render", false);     // works only in 64bit build
 
+            // just a small mod
+
             return value;
         }
     }
