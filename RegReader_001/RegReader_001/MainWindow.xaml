@@ -1,0 +1,28 @@
+﻿<Window x:Class="RegReader_001.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="533">
+    <Grid>
+        <Button Content="Read Registry" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="497" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Number of Channels:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,47,0,0" TextWrapping="Wrap" Text="{Binding Path=ChannelNumber}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Sampling Rate:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,75,0,0" TextWrapping="Wrap" Text="{Binding Path=SamplingRate}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Bits per sample:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,103,0,0" TextWrapping="Wrap" Text="{Binding Path=BitsPerSample}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Channel mask:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,131,0,0" TextWrapping="Wrap" Text="{Binding Path=ChannelMask}" VerticalAlignment="Top" Width="120"/>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="270,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Number of Channels:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="387,47,0,0" TextWrapping="Wrap" Text="{Binding ChannelNumber2}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="270,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Sampling Rate:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="387,75,0,0" TextWrapping="Wrap" Text="{Binding SamplingRate2}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="270,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Bits per sample:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="387,103,0,0" TextWrapping="Wrap" Text="{Binding BitsPerSample2}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="270,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Channel mask:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="387,131,0,0" TextWrapping="Wrap" Text="{Binding ChannelMask2}" VerticalAlignment="Top" Width="120"/>
+
+        <ComboBox ItemsSource="{Binding Path=ListChannelNum}" HorizontalAlignment="Left" Margin="130,166,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1"/>
+
+    </Grid>
+</Window>
